@@ -1,0 +1,20 @@
+searchForm = document.querySelector('.search-form');
+
+document.querySelector('#search-btn').onclick = () =>{
+  searchForm.classList.toggle('active');
+}
+
+
+// Sticky Navigation Menu JS Code
+let scrollBtn = document.querySelector(".scroll-button a");
+console.log(scrollBtn);
+window.onscroll = function() {
+  if(document.documentElement.scrollTop > 50){
+    scrollBtn.style.display = "block";
+  }else{
+    scrollBtn.style.display = "none";
+  }
+
+}
+
+
